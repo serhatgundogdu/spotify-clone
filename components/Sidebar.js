@@ -7,7 +7,7 @@ import {useState, useEffect} from 'react'
 
 
 export default function Sidebar(props) {
-    const[width, SetWidth] = useState(241);
+    const[width, SetWidth] = useState(300);
     const [isMouseDown, setisMouseDown] = useState(false);
     const { x } = MousePosition();
 

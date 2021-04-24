@@ -1,0 +1,67 @@
+
+
+.playlistItem{
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: hsla(0,0%,100%,.1);
+    border-radius: 4px;
+    height: 80px;
+    position: relative;
+    -webkit-transition: background-color .3s ease;
+    transition: background-color .3s ease;
+    img{
+        width: 80px;
+        height: auto;
+        border-radius: 4px 0 0 4px;
+        box-shadow: 0 8px 24px rgba(0,0,0,.5);
+        position: relative;
+    }
+    .playlistDetail {
+        padding: 0 16px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        a{
+            color: white;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 24px;
+            letter-spacing: normal;
+            text-transform: none;
+            
+        }
+        .playButton{
+            border: 0;
+            height: 32px;
+            width: 32px;
+            border-radius: 50%;
+            transform: scale(0);
+            transition: 500ms all;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 2;
+            background-color: #1db954;
+            color: #fff;
+            svg{
+                color: white;
+                fill: white;
+                font-size: 16px;
+
+                fill: hsla(0,0%,100%,.7);
+                color: hsla(0,0%,100%,.7);
+            }
+        }
+    }
+    &:hover{
+        backdrop-filter: blur(60px);
+        background: hsla(0,0%,100%,.2);
+        .playlistDetail{
+            button{
+                cursor: pointer;
+                transform: scale(1.06);
+            }
+        }
+    }
+}

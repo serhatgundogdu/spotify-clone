@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {useState} from 'react'
 import Sidebar from './Sidebar'
+import Playingbar from './PlayingBar'
 
 
 export default function Body(props) {
@@ -35,9 +36,7 @@ export default function Body(props) {
                     </div>
                 </div>
             </div>
-            <div className={styles.bar}>
-                asd
-            </div>
+            <Playingbar />
         </>
 
     )

@@ -12,7 +12,16 @@ export default function Home() {
         <title>Spotify - Web Player</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Body {...{activepage: 'home'}} />
+      <Body {...{activepage: 'home', pagebody: (
+        <div className={styles.pagecontent}>
+          <section className={styles.homepagetop}> 
+            <h3 className={styles.contexttitle}>İyi günler</h3>
+          </section>
+          <section> 
+
+          </section>
+        </div>
+      )}} />
     </div>
   )
 }

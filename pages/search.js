@@ -5,14 +5,14 @@ import Link from 'next/link'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Body from '../components/Body'
 
-export default function Home() {
+export default function Search() {
   return (
     <div className={styles.body}>
       <Head>
         <title>Spotify - Web Player</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Body {...{activepage: 'home'}} />
+      <Body {...{activepage: 'search'}}/>
     </div>
   )
 }

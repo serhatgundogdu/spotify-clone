@@ -12,11 +12,16 @@ export default function Sidebar(props) {
     const { x } = MousePosition();
 
     useEffect(() => {
+      if(JSON.parse(localStorage.getItem('sbwidth')) & JSON.parse(localStorage.getItem('sbwidth')) > 0){
+        SetWidth(JSON.parse(localStorage.getItem('sbwidth')))
+      }
+
       if (!isMouseDown) return false;
   
       const handleMove = () => {
         if(x > 200 && x < 400){
           SetWidth(x);
+          localStorage.setItem('sbwidth',JSON.stringify(x))
         }
       };
   
